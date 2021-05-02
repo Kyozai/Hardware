@@ -13,14 +13,19 @@
 
     <!-- 3DCGモデルの読み込み -->
     <a-assets>
-      <a-asset-item id="vroid" src="computer.glb"></a-asset-item>
+      <a-asset-item id="computer-obj" src="computer.obj"></a-asset-item>
+      <a-asset-item id="computer-mtl" src="computer.mtl"></a-asset-item>
     </a-assets>
 
     <!-- 自作マーカーを追加  -->
     <a-marker type='pattern' url='ptn.patt'>
 
-      <!-- 3DCGモデルの呼び出し -->
-      <a-gltf-model src="#vroid"></a-gltf-model>
+//      <!-- 3DCGモデルの呼び出し -->
+//    <a-gltf-model src="#vroid"></a-gltf-model>
+      
+     <a-scene>
+      <a-obj-model position="0 0.5 -5" src="#computer-obj" mtl="#computer-mtl"></a-obj-model>      
+    </a-scene>
 
     </a-marker>
 
