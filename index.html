@@ -21,9 +21,13 @@
       <a-asset-item id="cpu2-obj" src="cpu2.obj"></a-asset-item>
       <a-asset-item id="cpu2-mtl" src="cpu2.mtl"></a-asset-item>
       
+       <!-- マザーボードモデル -->  
       <a-asset-item id="mb-obj" src="mb.obj"></a-asset-item>
       <a-asset-item id="mb-mtl" src="mb.mtl"></a-asset-item>
       
+       <!-- メモリモデル -->     
+      <a-asset-item id="memory-obj" src="memory.obj"></a-asset-item>
+      <a-asset-item id="memory-mtl" src="memory.mtl"></a-asset-item>
     </a-assets>
 
     <!-- 自作マーカーを追加  -->
@@ -37,6 +41,10 @@
 
      <a-marker type='pattern' url='pattern-mb.patt'>
      <a-obj-model position="0 0 0" src="#mb-obj" mtl="#mb-mtl"></a-obj-model>   
+     </a-marker>
+    
+     <a-marker type='pattern' url='pattern-memory.patt'>
+     <a-obj-model position="0 0 0" src="#memory-obj" mtl="#memory-mtl"></a-obj-model>   
      </a-marker>
     
      </a-scene>
