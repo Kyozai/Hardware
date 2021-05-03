@@ -13,8 +13,8 @@
 
     <!-- 3DCGモデルの読み込み -->
     <a-assets>
-      <a-asset-item id="test1-obj" src="cpu1.obj"></a-asset-item>
-      <a-asset-item id="test1-mtl" src="cpu1.mtl"></a-asset-item>
+      <a-asset-item id="cpu1-obj" src="cpu1.obj"></a-asset-item>
+      <a-asset-item id="cpu1-mtl" src="cpu1.mtl"></a-asset-item>
       
       <a-asset-item id="test2-obj" src="test2.obj"></a-asset-item>
       <a-asset-item id="test2-mtl" src="test2.mtl"></a-asset-item>
@@ -22,8 +22,8 @@
     </a-assets>
 
     <!-- 自作マーカーを追加  -->
-    <a-marker type='pattern' url='ptn.patt'>
-      <a-obj-model position="0 0 0" src="#test1-obj" mtl="#test1-mtl"></a-obj-model>      
+    <a-marker type='pattern' url='pattern-cpu1.patt'>
+      <a-obj-model position="0 0 0" src="#cpu1-obj" mtl="#cpu1-mtl"></a-obj-model>      
     </a-marker>
       
      <a-marker type='pattern' url='pattern-1.patt'>
