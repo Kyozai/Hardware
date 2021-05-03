@@ -29,7 +29,9 @@
       <a-asset-item id="memory-obj" src="memory.obj"></a-asset-item>
       <a-asset-item id="memory-mtl" src="memory.mtl"></a-asset-item>
   
- 
+      <!-- HDDモデル -->     
+      <a-asset-item id="hdd-obj" src="hdd.obj"></a-asset-item>
+      <a-asset-item id="hdd-mtl" src="hdd.mtl"></a-asset-item>
       
     </a-assets>
 
@@ -50,6 +52,10 @@
      <a-obj-model position="0 0 0" src="#memory-obj" mtl="#memory-mtl"></a-obj-model>   
      </a-marker>
 
+     <a-marker type='pattern' url='pattern-hdd.patt'>
+     <a-obj-model position="0 0 0" src="#hdd-obj" mtl="#hdd-mtl"></a-obj-model>   
+     </a-marker>
+    
      </a-scene>
     <!-- カメラを追加 -->
     <a-entity camera></a-entity>
